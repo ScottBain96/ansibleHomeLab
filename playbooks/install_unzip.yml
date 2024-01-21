@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: uninstall unzip package
+    apt:
+      name: unzip
+      state: absent
