@@ -1,6 +1,15 @@
 [UbuntuServers]
-192.168.1.236
-192.168.1.143
-192.168.1.124
+192.168.1.236 #ubuntuserver-01
+192.168.1.143 #ubuntuserver-02
+192.168.1.124 #ubuntuserver-03
+
+#[UbuntuBackup]
+#192.168.1.128 #ubuntuserver-baseLine
+
 [DebianDesktops]
-192.168.1.24
+192.168.1.126 #debiandesktop-01
+192.168.1.129 #debiandesktop-02
+
+#[DebianBackups]
+#192.168.1.239 #debiandesktop-baseline
+
