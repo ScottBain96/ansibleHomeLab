@@ -1,0 +1,19 @@
+---
+- name: edit my.ini file
+  hosts: 192.168.1.236
+  become: yes
+
+  tasks:
+    - name: change setting1 to testComplete
+      ini_file:
+        path: /home/scott/my.ini
+        section: mysql
+        option: setting1
+        value: testComplete
+
+    - name: add setting3 with value test3
+      ini_file:
+        path: /home/scott/my.ini
+        section: mysql
+        option: setting3
+        value: test3

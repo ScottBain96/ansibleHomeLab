@@ -1,0 +1,10 @@
+---
+- name: Remove folder on Ubuntu
+  hosts: UbuntuServers
+  become: yes
+
+  tasks:
+    - name: Remove the folder
+      file:
+        path: /home/scott/testDirectory
+        state: absent

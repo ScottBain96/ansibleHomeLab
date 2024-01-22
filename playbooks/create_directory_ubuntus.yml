@@ -1,0 +1,13 @@
+---
+- name: Create Folder for the ubuntu servers
+  hosts: UbuntuServers
+  become: yes
+
+  tasks:
+    - name: Create the folder
+      file:
+        path: /home/scott/testDirectory
+        state: directory
+        owner: scott
+        group: scott
+        mode: "0755"
